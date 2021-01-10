@@ -1,0 +1,177 @@
+2021-01-10 12:11:56.459 +11:00 [DBG] Hosting starting
+2021-01-10 12:11:56.803 +11:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-01-10 12:11:56.854 +11:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24DFB53C8C4498B0AD88A17C9DE41C8F43E12425)
+2021-01-10 12:11:56.871 +11:00 [INF] Now listening on: https://localhost:5001
+2021-01-10 12:11:56.873 +11:00 [INF] Now listening on: http://localhost:5000
+2021-01-10 12:11:56.875 +11:00 [DBG] Loaded hosting startup assembly Woolworth.WebUI
+2021-01-10 12:11:56.877 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-10 12:11:56.879 +11:00 [INF] Hosting environment: Development
+2021-01-10 12:11:56.881 +11:00 [INF] Content root path: S:\WoolworthTest\src\WebUI
+2021-01-10 12:11:56.883 +11:00 [DBG] Hosting started
+2021-01-10 12:11:57.049 +11:00 [DBG] Connection id "0HM5L0ISOQUNK" received FIN.
+2021-01-10 12:11:57.049 +11:00 [DBG] Connection id "0HM5L0ISOQUNL" received FIN.
+2021-01-10 12:11:57.051 +11:00 [DBG] Connection id "0HM5L0ISOQUNK" accepted.
+2021-01-10 12:11:57.051 +11:00 [DBG] Connection id "0HM5L0ISOQUNL" accepted.
+2021-01-10 12:11:57.057 +11:00 [DBG] Connection id "0HM5L0ISOQUNK" started.
+2021-01-10 12:11:57.059 +11:00 [DBG] Connection id "0HM5L0ISOQUNL" started.
+2021-01-10 12:11:57.078 +11:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-01-10 12:11:57.078 +11:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-01-10 12:11:57.131 +11:00 [DBG] Connection id "0HM5L0ISOQUNK" stopped.
+2021-01-10 12:11:57.131 +11:00 [DBG] Connection id "0HM5L0ISOQUNL" stopped.
+2021-01-10 12:11:57.137 +11:00 [DBG] Connection id "0HM5L0ISOQUNL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-01-10 12:11:57.137 +11:00 [DBG] Connection id "0HM5L0ISOQUNK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-01-10 12:11:57.526 +11:00 [DBG] Connection id "0HM5L0ISOQUNM" accepted.
+2021-01-10 12:11:57.532 +11:00 [DBG] Connection id "0HM5L0ISOQUNM" started.
+2021-01-10 12:11:57.637 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2021-01-10 12:11:57.644 +11:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-01-10 12:11:57.689 +11:00 [INF] Request finished in 53.5726ms 200 text/html;charset=utf-8
+2021-01-10 12:11:57.913 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2021-01-10 12:11:58.008 +11:00 [INF] Request finished in 95.0678ms 200 application/json;charset=utf-8
+2021-01-10 12:16:14.424 +11:00 [INF] Now listening on: https://localhost:5001
+2021-01-10 12:16:14.482 +11:00 [INF] Now listening on: http://localhost:5000
+2021-01-10 12:16:14.484 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-10 12:16:14.486 +11:00 [INF] Hosting environment: Development
+2021-01-10 12:16:14.488 +11:00 [INF] Content root path: S:\WoolworthTest\src\WebUI
+2021-01-10 12:16:15.341 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2021-01-10 12:16:15.389 +11:00 [INF] Request finished in 50.4668ms 200 text/html;charset=utf-8
+2021-01-10 12:16:15.579 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2021-01-10 12:16:15.661 +11:00 [INF] Request finished in 82.0183ms 200 application/json;charset=utf-8
+2021-01-10 12:18:23.452 +11:00 [DBG] Hosting starting
+2021-01-10 12:18:23.761 +11:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-01-10 12:18:23.802 +11:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24DFB53C8C4498B0AD88A17C9DE41C8F43E12425)
+2021-01-10 12:18:23.837 +11:00 [INF] Now listening on: https://localhost:5001
+2021-01-10 12:18:23.838 +11:00 [INF] Now listening on: http://localhost:5000
+2021-01-10 12:18:23.838 +11:00 [DBG] Loaded hosting startup assembly Woolworth.WebUI
+2021-01-10 12:18:23.839 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-10 12:18:23.840 +11:00 [INF] Hosting environment: Development
+2021-01-10 12:18:23.841 +11:00 [INF] Content root path: S:\WoolworthTest\src\WebUI
+2021-01-10 12:18:23.842 +11:00 [DBG] Hosting started
+2021-01-10 12:18:24.265 +11:00 [DBG] Connection id "0HM5L0MG5JA95" accepted.
+2021-01-10 12:18:24.265 +11:00 [DBG] Connection id "0HM5L0MG5JA94" accepted.
+2021-01-10 12:18:24.266 +11:00 [DBG] Connection id "0HM5L0MG5JA95" started.
+2021-01-10 12:18:24.267 +11:00 [DBG] Connection id "0HM5L0MG5JA94" started.
+2021-01-10 12:18:24.281 +11:00 [DBG] Connection id "0HM5L0MG5JA94" received FIN.
+2021-01-10 12:18:24.281 +11:00 [DBG] Connection id "0HM5L0MG5JA95" received FIN.
+2021-01-10 12:18:24.298 +11:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-01-10 12:18:24.298 +11:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-01-10 12:18:24.331 +11:00 [DBG] Connection id "0HM5L0MG5JA95" stopped.
+2021-01-10 12:18:24.331 +11:00 [DBG] Connection id "0HM5L0MG5JA94" stopped.
+2021-01-10 12:18:24.334 +11:00 [DBG] Connection id "0HM5L0MG5JA95" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-01-10 12:18:24.334 +11:00 [DBG] Connection id "0HM5L0MG5JA94" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-01-10 12:18:24.752 +11:00 [DBG] Connection id "0HM5L0MG5JA96" accepted.
+2021-01-10 12:18:24.754 +11:00 [DBG] Connection id "0HM5L0MG5JA96" started.
+2021-01-10 12:18:24.848 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2021-01-10 12:18:24.852 +11:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-01-10 12:18:24.894 +11:00 [INF] Request finished in 48.606ms 200 text/html;charset=utf-8
+2021-01-10 12:18:25.066 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2021-01-10 12:18:25.175 +11:00 [INF] Request finished in 109.7416ms 200 application/json;charset=utf-8
+2021-01-10 12:20:53.225 +11:00 [DBG] Hosting starting
+2021-01-10 12:20:53.538 +11:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-01-10 12:20:53.579 +11:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24DFB53C8C4498B0AD88A17C9DE41C8F43E12425)
+2021-01-10 12:20:53.611 +11:00 [INF] Now listening on: https://localhost:5001
+2021-01-10 12:20:53.612 +11:00 [INF] Now listening on: http://localhost:5000
+2021-01-10 12:20:53.613 +11:00 [DBG] Loaded hosting startup assembly Woolworth.WebUI
+2021-01-10 12:20:53.614 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-10 12:20:53.615 +11:00 [INF] Hosting environment: Development
+2021-01-10 12:20:53.615 +11:00 [INF] Content root path: S:\WoolworthTest\src\WebUI
+2021-01-10 12:20:53.616 +11:00 [DBG] Hosting started
+2021-01-10 12:20:54.012 +11:00 [DBG] Connection id "0HM5L0NSPMKQ7" accepted.
+2021-01-10 12:20:54.012 +11:00 [DBG] Connection id "0HM5L0NSPMKQ8" accepted.
+2021-01-10 12:20:54.014 +11:00 [DBG] Connection id "0HM5L0NSPMKQ7" started.
+2021-01-10 12:20:54.015 +11:00 [DBG] Connection id "0HM5L0NSPMKQ8" started.
+2021-01-10 12:20:54.033 +11:00 [DBG] Connection id "0HM5L0NSPMKQ8" received FIN.
+2021-01-10 12:20:54.033 +11:00 [DBG] Connection id "0HM5L0NSPMKQ7" received FIN.
+2021-01-10 12:20:54.045 +11:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-01-10 12:20:54.045 +11:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-01-10 12:20:54.074 +11:00 [DBG] Connection id "0HM5L0NSPMKQ7" stopped.
+2021-01-10 12:20:54.075 +11:00 [DBG] Connection id "0HM5L0NSPMKQ8" stopped.
+2021-01-10 12:20:54.077 +11:00 [DBG] Connection id "0HM5L0NSPMKQ7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-01-10 12:20:54.077 +11:00 [DBG] Connection id "0HM5L0NSPMKQ8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-01-10 12:20:54.563 +11:00 [DBG] Connection id "0HM5L0NSPMKQ9" accepted.
+2021-01-10 12:20:54.565 +11:00 [DBG] Connection id "0HM5L0NSPMKQ9" started.
+2021-01-10 12:20:54.663 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2021-01-10 12:20:54.667 +11:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-01-10 12:20:54.717 +11:00 [INF] Request finished in 55.2703ms 200 text/html;charset=utf-8
+2021-01-10 12:20:54.943 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2021-01-10 12:20:55.040 +11:00 [INF] Request finished in 97.5002ms 200 application/json;charset=utf-8
+2021-01-10 12:21:52.190 +11:00 [INF] Now listening on: https://localhost:5001
+2021-01-10 12:21:52.243 +11:00 [INF] Now listening on: http://localhost:5000
+2021-01-10 12:21:52.245 +11:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-10 12:21:52.246 +11:00 [INF] Hosting environment: Development
+2021-01-10 12:21:52.247 +11:00 [INF] Content root path: S:\WoolworthTest\src\WebUI
+2021-01-10 12:21:53.210 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/index.html  
+2021-01-10 12:21:53.248 +11:00 [INF] Request finished in 40.2935ms 200 text/html;charset=utf-8
+2021-01-10 12:21:53.390 +11:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json  
+2021-01-10 12:21:53.476 +11:00 [INF] Request finished in 86.2421ms 200 application/json;charset=utf-8
