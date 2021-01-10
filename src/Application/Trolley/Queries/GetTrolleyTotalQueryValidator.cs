@@ -60,7 +60,7 @@ namespace Woolworth.Application.Trolley.Queries
                 .MinimumLength(1);
 
             RuleFor(v => v.Quantity)
-                .GreaterThanOrEqualTo(1);//For specials the Quantity should always be greater than 0
+                .GreaterThanOrEqualTo(0);//For specials the Quantity should always be greater than 0
 
         }
     }

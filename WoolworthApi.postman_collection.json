@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "ec4c7f6e-dfcb-42df-a6ad-7e96b0bb5498",
+		"name": "WoolworthApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}api/user",
+					"host": [
+						"{{base-url}}api"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sorted Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}api/products/sort?sortOption=high",
+					"host": [
+						"{{base-url}}api"
+					],
+					"path": [
+						"products",
+						"sort"
+					],
+					"query": [
+						{
+							"key": "sortOption",
+							"value": "high"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcuate Total",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"products\": [\r\n      {\r\n        \"name\": \"1\",\r\n        \"price\": 2.0,\r\n        \"_typeTag\": \"TrolleyProductDto\"\r\n      },\r\n      {\r\n        \"name\": \"2\",\r\n        \"price\": 5.0,\r\n        \"_typeTag\": \"TrolleyProductDto\"\r\n      }\r\n    ],\r\n    \"specials\": [\r\n      {\r\n        \"quantities\": [\r\n          {\r\n            \"name\": \"1\",\r\n            \"quantity\": 3,\r\n            \"_typeTag\": \"TrolleyQuantityDto\"\r\n          },\r\n          {\r\n            \"name\": \"2\",\r\n            \"quantity\": 0,\r\n            \"_typeTag\": \"TrolleyQuantityDto\"\r\n          }\r\n        ],\r\n        \"Total\": 5.0,\r\n        \"_typeTag\": \"TrolleySpecialDto\"\r\n      },\r\n      {\r\n        \"Quantities\": [\r\n          {\r\n            \"name\": \"1\",\r\n            \"quantity\": 1,\r\n            \"_typeTag\": \"TrolleyQuantityDto\"\r\n          },\r\n          {\r\n            \"name\": \"2\",\r\n            \"quantity\": 2,\r\n            \"_typeTag\": \"TrolleyQuantityDto\"\r\n          }\r\n        ],\r\n        \"total\": 10.0,\r\n        \"_typeTag\": \"TrolleySpecialDto\"\r\n      }\r\n    ],\r\n    \"Quantities\": [\r\n      {\r\n        \"name\": \"1\",\r\n        \"quantity\": 3,\r\n        \"_typeTag\": \"TrolleyQuantityDto\"\r\n      },\r\n      {\r\n        \"name\": \"2\",\r\n        \"quantity\": 2,\r\n        \"_typeTag\": \"TrolleyQuantityDto\"\r\n      }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base-url}}/api/cart/trolleyTotal",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"trolleyTotal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

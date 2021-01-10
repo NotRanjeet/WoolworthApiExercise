@@ -34,7 +34,7 @@ namespace Woolworth.Application.UnitTests.Trolley.Queries
             //Arrange
             var quantity = new TrolleyQuantityDto
             {
-                Quantity = 0,
+                Quantity = -1,
                 Name = "TestProduct"
             };
             var validator = new TrolleyQuantityValidator();

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Woolworth.Application;
 using Woolworth.Infrastructure;
+using Woolworth.WebUI.Filters;
 
 namespace Woolworth.WebUI
 {
@@ -25,12 +26,16 @@ namespace Woolworth.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             //Json options added to accept enum as string from API endpoints
-            services.AddMvcCore()
+            services.AddMvcCore(options =>
+            {
+                options.Filters.Add(new ApiExceptionFilterAttribute());
+            })
                 .AddApiExplorer()
-                .AddJsonOptions(options => 
+                .AddJsonOptions(options =>
                     options.JsonSerializerOptions
                         .Converters
                         .Add(new JsonStringEnumConverter()));
+            //TODO: Add Correlation Id Header middleware to push Correlation id to Log Context
             services.AddApplication();
             services.AddInfrastructure(Configuration);
 
@@ -97,7 +102,8 @@ namespace Woolworth.WebUI
 
             app.UseRouting();
 
-            app.UseEndpoints(enpoints => {
+            app.UseEndpoints(enpoints =>
+            {
                 enpoints.MapControllers();
             });
 
