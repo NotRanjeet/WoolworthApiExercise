@@ -41,7 +41,7 @@ namespace Woolworth.Application.Trolley.Queries
             RuleFor(v => v.Name)
                 .NotEmpty()
                 .NotNull()
-                .MinimumLength(2)
+                .MinimumLength(1)
                 .MaximumLength(1000);//Putting some arbitrary upper limit for validation.
 
             RuleFor(v => v.Price)
@@ -57,7 +57,7 @@ namespace Woolworth.Application.Trolley.Queries
                 .NotEmpty()
                 .NotNull()
                 .MaximumLength(1000)
-                .MinimumLength(2);
+                .MinimumLength(1);
 
             RuleFor(v => v.Quantity)
                 .GreaterThanOrEqualTo(1);//For specials the Quantity should always be greater than 0

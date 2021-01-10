@@ -34,25 +34,6 @@ namespace Woolworth.Application.UnitTests.Trolley.Queries
             result.ShouldNotHaveAnyValidationErrors();
         }
 
-
-        [Test]
-        public void InvalidProductNameShouldFailValidation()
-        {
-            //Arrange
-
-            var product = new TrolleyProductDto
-            {
-                Price = 10,
-                Name = "T",
-            };
-            var validator = new TrolleyProductValidator();
-            //Act
-            var result = validator.TestValidate(product);
-
-            //Assert
-            result.ShouldHaveValidationErrorFor(i=>i.Name);
-        }
-
         [Test]
         public void NullProductNameShouldFailValidation()
         {
